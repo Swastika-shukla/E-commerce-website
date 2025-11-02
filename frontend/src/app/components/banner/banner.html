@@ -1,0 +1,12 @@
+<div class="carousel-wrapper">
+  <div class="carousel-track" #carousel>
+    <div class="banner" *ngFor="let banner of banners">
+      <img [src]="banner.imageUrl" [alt]="banner.alt" />
+      <div class="banner-label">
+        <h2>{{ banner.title }}</h2>
+        <p>{{ banner.description }}</p>
+        <!-- <button *ngIf="banner.cta">{{ banner.cta }}</button> -->
+      </div>
+    </div>
+  </div>
+</div>

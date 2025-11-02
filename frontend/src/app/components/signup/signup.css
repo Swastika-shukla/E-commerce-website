@@ -1,0 +1,65 @@
+.custom-modal {
+  background: linear-gradient(135deg, #FFF1F1, #F3F8FF);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #D26D6D;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  font-weight: 500;
+  color: #6C757D;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.signup-form .form-control {
+  border-radius: 12px;
+  border: 1px solid #DADADA;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.signup-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(210, 109, 109, 0.2);
+  border-color: #D26D6D;
+}
+
+.form-check-input {
+  accent-color: #D26D6D;
+}
+
+.form-check-label a {
+  color: #D26D6D;
+  text-decoration: underline;
+}
+
+.btn-signup {
+  background-color: #D26D6D;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #B95858;
+}
+
+.alert {
+  border-radius: 12px;
+  font-size: 0.95rem;
+}

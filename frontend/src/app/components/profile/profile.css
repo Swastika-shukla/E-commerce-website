@@ -1,0 +1,75 @@
+.profile-page {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #FFF1F1, #F3F8FF);
+  min-height: 100vh;
+}
+
+.profile-card {
+  background: linear-gradient(135deg, #FDEFF9, #ECF2FF);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid #D26D6D;
+}
+
+.username {
+  font-weight: 600;
+  color: #D26D6D;
+  font-size: 1.8rem;
+}
+
+.user-email {
+  color: #6C757D;
+  font-size: 0.95rem;
+}
+
+.user-bio {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-edit {
+  background-color: #D26D6D;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: #B95858;
+}
+
+.wishlist-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #D26D6D;
+  margin-bottom: 20px;
+}
+
+.wishlist-item {
+  background-color: #FCEDEC;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.wishlist-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-name {
+  font-weight: 500;
+  color: #6C757D;
+}

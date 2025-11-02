@@ -1,0 +1,66 @@
+
+<!-- <div class="cart-container">
+  <h2 class="cart-title">🛒 Your Shopping Cart</h2>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="getProductImage(item.title)" alt="{{ item.title }}" class="cart-image" />
+
+      <div class="cart-details">
+        <h4>{{ item.title }}</h4>
+        <p>{{ getProductDescription(item.title) }}</p>
+        <p class="price">₹{{ getProductPrice(item.title) }}</p>
+
+        <div class="quantity-controls">
+          <button (click)="decreaseQuantity(item)">−</button>
+          <span>{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item)">+</button>
+        </div>
+
+        <button class="remove-btn" (click)="removeItem(item)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div class="cart-summary" *ngIf="cartItems.length > 0">
+  <h3>Total: ₹{{ getTotalCost() }}</h3>
+  <button class="checkout-btn" (click)="checkout()">Pay & Checkout</button>
+</div>
+
+
+  <ng-template #emptyCart>
+    <p class="empty-message">Your cart is empty. Start shopping!</p>
+  </ng-template>
+</div> -->
+
+<div class="cart-container">
+  <h2 class="cart-title">🛒 Your Shopping Cart</h2>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <img [src]="getProductImage(item.productId)" alt="Product Image" class="cart-image" />
+
+      <div class="cart-details">
+        <h4>{{ getProductTitle(item.productId) }}</h4>
+        <p>{{ getProductDescription(item.productId) }}</p>
+        <p class="price">₹{{ getProductPrice(item.productId) }}</p>
+
+        <div class="quantity-controls">
+          <button (click)="decreaseQuantity(item)">−</button>
+          <span>{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item)">+</button>
+        </div>
+
+        <button class="remove-btn" (click)="removeItem(item)">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-summary" *ngIf="cartItems.length > 0">
+    <h3>Total: ₹{{ getTotalCost() }}</h3>
+    <button class="checkout-btn" (click)="checkout()">Pay & Checkout</button>
+  </div>
+
+  <ng-template #emptyCart>
+    <p class="empty-message">Your cart is empty. Start shopping!</p>
+  </ng-template>
+</div>

@@ -1,0 +1,56 @@
+.custom-modal {
+  background: linear-gradient(135deg, #FDEFF9, #ECF2FF);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #D26D6D;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  font-weight: 500;
+  color: #6C757D;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.login-form .form-control {
+  border-radius: 12px;
+  border: 1px solid #DADADA;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgba(210, 109, 109, 0.2);
+  border-color: #D26D6D;
+}
+
+.btn-login {
+  background-color: #D26D6D;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #B95858;
+}
+
+.alert {
+  border-radius: 12px;
+  font-size: 0.95rem;
+}

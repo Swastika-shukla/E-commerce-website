@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "password": "1234",
+      "email": "admin@example.com"
+    },
+    {
+      "id": "2",
+      "name": "user",
+      "password": "abcd",
+      "email": "user@example.com"
+    },
+    {
+      "id": "1",
+      "name": "alice",
+      "password": "alice123",
+      "email": "alice@example.com"
+    },
+    {
+      "id": "2",
+      "name": "bob",
+      "password": "bobSecure!",
+      "email": "bob@example.com"
+    },
+    {
+      "id": "3",
+      "name": "charlie",
+      "password": "charlie_pass",
+      "email": "charlie@example.com"
+    },
+    {
+      "id": "4",
+      "name": "diana",
+      "password": "diana@2025",
+      "email": "diana@example.com"
+    },
+    {
+      "id": "5",
+      "name": "eve",
+      "password": "evePwd#1",
+      "email": "eve@example.com"
+    },
+    {
+      "id": "6",
+      "name": "Hello",
+      "password": "hello",
+      "email": "hello@example.com"
+    },
+    {
+      "id": "7",
+      "name": "Swastika",
+      "password": "shukla",
+      "email": "swastika@example.com"
+    },
+    {
+      "id": "8",
+      "name": "Vaishali",
+      "password": "sahu",
+      "email": "vaishali@example.com"
+    },
+    {
+      "id": "9",
+      "name": "Shrivalli",
+      "password": "1234",
+      "email": "shrivalli@example.com"
+    },
+    {
+      "id": "10",
+      "name": "Devansh",
+      "password": "bihari",
+      "email": "devansh@example.com"
+    },
+    {
+      "id": "11",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "12",
+      "name": "hii",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "13",
+      "name": "h",
+      "password": "h",
+      "email": "h@gmail.com"
+    },
+    {
+      "id": 14,
+      "name": "ab",
+      "password": "ab",
+      "email": "ab@gmail.com"
+    }
+  ],
+  "carts": [
+    {
+      "username": "h",
+      "items": [
+        {
+          "title": "Bluetooth Speaker",
+          "quantity": 1
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "username": "Hello",
+      "items": [],
+      "id": "06fb"
+    },
+    {
+      "id": "7ecf",
+      "username": "ab",
+      "items": [
+        {
+          "title": "Gaming Mouse",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+.carousel-wrapper {
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.banner {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-label {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 60%;
+}
+
+ .banner-label h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.banner-label p {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.banner-label button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

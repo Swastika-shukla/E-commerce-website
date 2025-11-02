@@ -1,0 +1,49 @@
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="signupModalLabel">✨ Create Your Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form">
+          <div class="form-group">
+            <label for="signupName">Name</label>
+            <input id="signupName" type="text" formControlName="name" class="form-control" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="signupEmail">Email</label>
+            <input id="signupEmail" type="email" formControlName="email" class="form-control" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" type="password" formControlName="password" class="form-control" placeholder="Create a password">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" formControlName="confirmPassword" class="form-control" placeholder="Repeat your password">
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="termsAccepted" formControlName="termsAccepted">
+            <label class="form-check-label" for="termsAccepted">
+              I agree to the <a href="#">Terms & Conditions</a>
+            </label>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-signup">Sign Up</button>
+          </div>
+        </form>
+
+        <div *ngIf="signupSuccess" class="alert alert-success mt-3 text-center" (click)="signupmodal()">
+          🎉 Sign up successful! Welcome, {{ signupForm.get('username')?.value }}!
+        </div>
+        <div *ngIf="signupFailed" class="alert alert-danger mt-3 text-center">
+          ❌ {{ errorMessage || 'Sign up failed. Please check your details and try again.' }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

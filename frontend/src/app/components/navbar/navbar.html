@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg shadow-sm rounded sticky-top" style="background-color: #fff;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-uppercase" style="color: #D26D6D; font-family: 'Poppins', sans-serif;" href="#">GizmoHUB</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left-side nav links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact">Contact Us</a>
+        </li>
+      </ul>
+
+      <!-- Search bar -->
+      <form class="d-flex me-3" role="search">
+        <input class="form-control rounded-pill border-light shadow-sm" 
+               type="search" placeholder="Search" 
+               (input)="onSearchChange($event.target.value)">
+      </form>
+
+      <!-- Right-side auth/cart links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 align-items-center">
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" href="#" style="color:#536608" (click)="loginmodal()">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a class="nav-link" href="#" style="color:#536608" (click)="signupmodal()">Sign Up</a>
+        </li>
+        <li class="nav-item d-flex align-items-center gap-2" *ngIf="isLoggedIn">
+          <span class="nav-link" style="color: #536608;">Hey, {{username}}</span>
+          <a class="nav-link" href="#" style="color:#536608" (click)="logout()">Logout</a>
+          <a class="nav-link" style="color: #536608;" routerLink="profile">My Profile</a>
+        </li>
+        <li *ngIf="isLoggedIn" class="nav-item">
+          <a routerLink="/cart" class="nav-link">🛒Cart</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
